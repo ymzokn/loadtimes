@@ -53,7 +53,7 @@ elif(extension=="ublock"):
 chrome_options.add_argument('--ignore-certificate-errors')
 chrome_options.add_argument('--ignore-ssl-errors')
 driver = webdriver.Chrome(chrome_options = chrome_options)
-#driver.set_page_load_timeout(10)
+driver.set_page_load_timeout(20)
 
 f = open(os.path.join(dirname, "websites.txt"))
 lines = f.readlines()
@@ -81,7 +81,7 @@ for line in lines:
         out.write(line + ": " + str(total_load_time) + ' ms \n')
         out.close()
     except Exception as e:
-        logging.error('Error at %s', 'division', exc_info=e)
+        logging.error('Error at %s', line, exc_info=e)
         print >> sys.stderr, "skipped", url
         pass
 
