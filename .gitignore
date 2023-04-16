@@ -1,0 +1,7 @@
+*.log
+/data/*
+/data_with_adblock/*
+/data_with_adblockplus/*
+/data_with_ghostery/*
+/data_with_privacy_badger/*
+/data_with_ublock/*

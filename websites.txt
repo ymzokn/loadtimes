@@ -1,0 +1,10 @@
+youtube.com
+baidu.com
+bilibili.com
+qq.com
+zhihu.com
+openai.com
+yahoo.com
+bing.com
+taobao.com
+163.com
